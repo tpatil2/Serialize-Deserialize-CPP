@@ -1,0 +1,48 @@
+Coding Assignment
+
+
+
+A retailer is trying to develop a program for archiving their records of business
+revenues and expenses. Their data comes from various sources, so they need to
+clean it up and then archive it. Can you help them with writing the code?
+
+
+Step 1: Parsing Data
+
+● You can use the sample data file “data.csv”, attached to this message.
+● The file format in CSV;
+● The file contains dates, times, transaction types, and transaction amounts
+  in dollars; The generic format is as follows:
+  mm/dd/yyyy hour:min:sec, type, amount
+  All numbers are integers, except the amount which is a double. The
+  transaction type is a two-letter string. For example:
+    04/12/2017 17:00:00, TS, 132.95
+    04/13/2017 17:00:00, TV, -55.20
+  Positive transactions are revenues and negative ones are expenses.
+● Parse the data and load it into memory.
+
+
+Step 2: Serialize
+
+● After you parse the data, sort the transactions by date and time;
+● Write a function to serialize the sorted information into a binary format of
+  your own choosing.
+● Note that each transaction type should be written to a different binary file.
+  For example, all transactions designated by “TS” should be written to a file
+  named “data.ts”, and so on.
+
+
+Step 3: Deserialize
+
+● The company decides to analyze the data, so we need to deserialize the
+  data in the binary files. Write another function to read the binary files of
+  Step 2 and merge them into a plain ascii file in CSV format. Please make
+  sure that the output data is sorted by date and time.
+
+Step 4: Generate Report
+
+Add a summary of the operations:
+● Report the time spent in each of the steps 1, 2, and 3 in milliseconds;
+● Report the first and last dates in the data; and
+● Report the dates with the highest and lowest profits for each transaction
+type.

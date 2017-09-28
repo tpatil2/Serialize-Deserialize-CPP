@@ -1,0 +1,13 @@
+Step 1 Parsing Time : 93
+Step 2 Serialization Time: 0
+Step 3 Deserialization Time: 44
+
+First Date of Record is: 2006/01/01 08:32:57
+Last Date of Record is: 2015/12/31 19:44:27
+
+Total Profits for TS TV TP TC and TF
+TS: 652255
+TV: 532018
+TP: 536899
+TC: 562094
+TF: 557269
